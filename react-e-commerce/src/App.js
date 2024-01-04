@@ -1,13 +1,36 @@
 import React from 'react';
 import {Home} from './pages/Home'
 import './App.css';
-import ProductList from './features/product-list/ProductList';
+import { LoginPage } from './pages/LoginPage';
+import { SignupPage } from './pages/SignupPage';
+
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (<Home/>),
+  },
+  {
+    path: "/Login",
+    element: (<LoginPage/>),
+  },
+  {
+    path: "/Signup",
+    element: (<SignupPage/>),
+  },
+]);
 
 function App() {
   return (
     <div className="App">
-      <Home/>
-      {/* <ProductList/> */}
+      <RouterProvider router={router} />
     </div>
   );
 }
