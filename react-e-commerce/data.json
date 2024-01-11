@@ -2232,7 +2232,7 @@
       "checked": false
     }
   ],
-  "category":[
+  "categories":[
     {
       "value": "smartphones",
       "label": "smartphones",
@@ -2333,5 +2333,8 @@
       "label": "lighting",
       "checked": false
     }
+  ],
+  "users":[
+    
   ]
 }

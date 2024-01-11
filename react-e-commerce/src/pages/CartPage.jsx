@@ -7,7 +7,6 @@ export const CartPage = () => {
     <div>
       <Navbar />
       <Cart />
-
     </div>
   )
 }

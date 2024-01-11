@@ -1,16 +1,23 @@
 
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useForm, SubmitHandler } from "react-hook-form"
 import {
   increment,
   incrementAsync,
-  selectCount,
 } from '../LoginSlice';
 import { Link } from 'react-router-dom'
 
 
+
 export const Signup = () => {
-  const count = useSelector(selectCount);
+  // const count = useSelector(selectCount);
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
   const dispatch = useDispatch();
 
   return (

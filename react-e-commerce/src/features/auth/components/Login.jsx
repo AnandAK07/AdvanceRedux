@@ -3,12 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   increment,
   incrementAsync,
-  selectCount,
 } from '../LoginSlice';
 import { Link } from 'react-router-dom'
 
 export const Login = () => {
-  const count = useSelector(selectCount);
+  // const count = useSelector(selectCount);
   const dispatch = useDispatch();
 
   return (
